@@ -1,12 +1,12 @@
 # 基于Web后端的消费记录分析App 《非记不可》
 ### 开发机型：Nexus-5x 28
-### 核心使用: Todo-MVP Retrofit Realm Rxjava Dagger MPAndroidChart Glide SSM 
+### 核心依赖: Todo-MVP Retrofit Realm Rxjava Dagger MPAndroidChart Glide SSM 
 *后端项目：https://github.com/yuepengfeidev/FeijiBook/tree/master/quote/FeiJiBookServer*  
 *数据库及其他资源包：https://github.com/yuepengfeidev/FeijiBook/tree/master/quote/zipResource*  
 *(该项目素材大都来自Shark记账)*  
 
 
-#### 登录注册界面  
+#### 登录注册界面(无后端情况下，账号：admin 密码：123456 直接单机登录)    
 <img src="https://github.com/yuepengfeidev/FeijiBook/blob/master/quote/exampleImg/Screenshot_20191120-235405.png" width="200"
 heigh="450"/>
 <img src="https://github.com/yuepengfeidev/FeijiBook/blob/master/quote/exampleImg/Screenshot_20191121-000525.png" width="200"
