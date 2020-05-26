@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:background="@color/sky_blue_like"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginStart="23dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/search_record_et_bg"
+        android:orientation="horizontal"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="14dp"
+        android:layout_height="36dp">
+
+        <ImageView
+            android:src="@drawable/search_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="2dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <EditText
+            android:id="@+id/et_search_record"
+            android:layout_width="match_parent"
+            android:textCursorDrawable="@drawable/cursor_shape"
+            android:background="@null"
+            android:hint="搜索类别/备注"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="20dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel_search_record"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:layout_gravity="center_vertical"
+        android:text="取消"
+        android:layout_marginEnd="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+</LinearLayout>

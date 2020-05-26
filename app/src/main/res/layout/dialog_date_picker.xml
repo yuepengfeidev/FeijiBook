@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/date_picker_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/date_picker_text_light"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/title"
+            android:textColor="@color/date_picker_text_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/confirm"
+            android:textColor="@color/date_picker_text_light"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/date_picker_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="17dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="17dp"
+            android:paddingBottom="15dp">
+
+            <com.example.feijibook.widget.my_datepicker.PickerView
+                android:id="@+id/dpv_year"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/picker_view_height"
+                android:layout_weight="3" />
+
+
+            <com.example.feijibook.widget.my_datepicker.PickerView
+                android:id="@+id/dpv_month"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/picker_view_height"
+                android:layout_weight="2" />
+
+
+            <com.example.feijibook.widget.my_datepicker.PickerView
+                android:id="@+id/dpv_day"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/picker_view_height"
+                android:layout_margin="5dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/line_decoration_item"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="20sp"
+        android:background="@color/line_gray" />
+
+</LinearLayout>

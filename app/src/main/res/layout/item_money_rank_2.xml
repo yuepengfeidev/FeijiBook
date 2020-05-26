@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_money_rank_item"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/item_pressed_bg"
+    android:clickable="true"
+    android:focusable="true">
+
+    <com.example.feijibook.widget.my_progress_bar.ProportionScaleView
+        android:id="@+id/proportion_scale_view"
+        android:layout_width="331dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_money_rank_icon"
+        app:layout_constraintStart_toEndOf="@+id/iv_money_rank_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_money_rank_icon" />
+
+    <ImageView
+        android:id="@+id/iv_money_rank_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/category_e_catering_s" />
+
+    <TextView
+        android:id="@+id/tv_money_rank_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:textColor="@color/line_or_circle_or_chart_text_heavy_gray"
+        app:layout_constraintBottom_toTopOf="@+id/proportion_scale_view"
+        app:layout_constraintStart_toStartOf="@+id/proportion_scale_view"
+        app:layout_constraintTop_toTopOf="@+id/iv_money_rank_icon"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_money_rank_money"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:textColor="@color/line_or_circle_or_chart_text_heavy_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_money_rank_type"
+        app:layout_constraintEnd_toEndOf="@+id/proportion_scale_view"
+        app:layout_constraintTop_toTopOf="@+id/tv_money_rank_type" />
+
+    <TextView
+        android:id="@+id/tv_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/proportion_scale_view"
+        app:layout_constraintTop_toBottomOf="@+id/proportion_scale_view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="wrap_content"
+        android:layout_height="0.45dp"
+        android:background="@color/line_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/proportion_scale_view" />
+</android.support.constraint.ConstraintLayout>

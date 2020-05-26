@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/toast_shape"
+    android:id="@+id/custom_toast_container"
+    android:layout_width="140dp" android:layout_height="60dp">
+
+    <LinearLayout
+        android:layout_width="140dp"
+        android:gravity="center"
+        android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/tv_toast"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

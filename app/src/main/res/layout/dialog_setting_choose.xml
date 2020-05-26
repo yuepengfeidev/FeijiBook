@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="190dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="120.5dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_bill_setting_choose"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_first_item"
+            android:textColor="@color/text_blue_color"
+            android:textSize="20sp"
+            android:background="@drawable/selector_bill_setting_choose_bg"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:focusable="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_gray" />
+
+        <TextView
+            android:id="@+id/tv_second_item"
+            android:layout_width="match_parent"
+            android:background="@drawable/selector_bill_setting_choose_bg"
+            android:textColor="@color/text_blue_color"
+            android:textSize="20sp"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_height="60dp"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/selector_bill_cancel"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/quxiao"
+        android:textColor="@color/text_blue_color"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+</android.support.constraint.ConstraintLayout>

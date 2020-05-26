@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.main_act.detail_frag.DetailFragment">
+
+    <include
+        android:id="@+id/detail_top_layout"
+        layout="@layout/detail_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.feijibook.widget.my_recyclerview.PullChangeRecyclerView
+        android:id="@+id/rv_change_month"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

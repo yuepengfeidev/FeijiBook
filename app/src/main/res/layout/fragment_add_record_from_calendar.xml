@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_blue_like"
+    tools:context=".activity.add_record_from_calendar_icon_act.AddRecordFromCalendarIconFragment">
+
+
+    <TextView
+        android:id="@+id/tv_ym_choose_arfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:textColor="@drawable/text_view_click_bg"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/iv_back_to_detail_frag"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/back_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_ym_choose_arfc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_ym_choose_arfc"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/tv_back_to_detail_frag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/tv_back_to_detail_frag_fanhui"
+        android:textColor="@color/date_picker_text_light"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_back_to_detail_frag"
+        app:layout_constraintEnd_toStartOf="@+id/tv_ym_choose_arfc"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@+id/iv_back_to_detail_frag"
+        app:layout_constraintTop_toTopOf="@+id/iv_back_to_detail_frag" />
+
+    <TextView
+        android:id="@+id/tv_locate_to_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/tv_locate_to_today_jintian"
+        android:textColor="@color/date_picker_text_light"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_ym_choose_arfc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_ym_choose_arfc" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/calendar_and_records_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ym_choose_arfc" />
+
+    <ViewStub
+        android:id="@+id/vs_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout="@layout/layout_no_data"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/include"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.7" />
+
+</android.support.constraint.ConstraintLayout>

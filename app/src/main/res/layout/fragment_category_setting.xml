@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".activity.category_setting_act.CategorySettingFragment">
+
+    <include
+        android:id="@+id/layout_category_setting_top"
+        layout="@layout/layout_category_setting_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.feijibook.widget.MyViewPager
+        android:id="@+id/vp_category_setting_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/tv_add_category"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/add_custom_category_bg"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="+添加类别"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

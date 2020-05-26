@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cb_record_type"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="8dp"
+    android:button="@null"
+    android:clickable="true"
+    android:drawablePadding="3dp"
+    android:focusable="true"
+    android:gravity="center_horizontal"
+    android:textSize="12sp"
+    tools:layout_editor_absoluteX="45dp"
+    tools:layout_editor_absoluteY="16dp" />

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox
+    android:id="@+id/cb_add_custom_type_icon"
+    android:button="@drawable/category_e_dress"
+    android:scaleX="0.85"
+    android:scaleY="0.85"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="13dp"
+    android:layout_marginEnd="13dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+</CheckBox>

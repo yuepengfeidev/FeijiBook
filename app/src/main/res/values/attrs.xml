@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ArcMenu">
+        <attr name="radius" />
+    </declare-styleable>
+
+    <declare-styleable name="MyNestedScrollView">
+        <attr name="zoomable" />
+    </declare-styleable>
+
+    <declare-styleable name="MyCircleProgressBar">
+        <attr name="circleColor" format="color"/>
+        <attr name="circleProgressColor" format="color"/>
+        <attr name="circleWidth" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+</resources>

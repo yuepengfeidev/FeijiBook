@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/marker_view_shape"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_remark_title"
+        android:layout_width="165dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/transparent_white_bg"
+        android:gravity="center"
+        android:text="@string/tv_remark_title_suidasnabijaoyi"
+        android:visibility="gone"
+        android:textColor="@color/text_light_white" />
+
+    <include
+        android:id="@+id/item_remark_record_first_in_three_records"
+        layout="@layout/item_each_record_remark"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/item_remark_record_second_in_three_records"
+        layout="@layout/item_each_record_remark"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/item_remark_record_third_in_three_records"
+        layout="@layout/item_each_record_remark"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+         />
+
+    <TextView
+        android:id="@+id/tv_item_remark_total_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/text_light_white"
+        android:visibility="gone"
+        android:textSize="10sp" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_item_remark_no_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="65dp"
+        android:paddingTop="13dp"
+        android:paddingEnd="65dp"
+        android:paddingBottom="13dp"
+        android:visibility="gone"
+        android:text="@string/tv_item_remark_no_money_meiyoufeiyong"
+        android:textColor="@color/text_light_white" />
+
+</LinearLayout>

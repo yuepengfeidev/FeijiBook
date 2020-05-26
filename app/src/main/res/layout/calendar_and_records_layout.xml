@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.haibin.calendarview.CalendarLayout
+        android:id="@+id/cl_in_arfc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        app:calendar_content_view_id="@+id/rv_in_arfc">
+
+        <com.haibin.calendarview.CalendarView
+            android:id="@+id/cv_in_arfc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:calendar_height="45dp"
+            app:calendar_padding="4dp"
+            app:select_mode="single_mode"
+            app:current_day_lunar_text_color="#C2C2C2"
+            app:current_day_text_color="#000000"
+            app:current_month_lunar_text_color="#C2C2C2"
+            app:lunar_text_size="10sp"
+            app:max_year="2025"
+            app:max_year_day="13"
+            app:max_year_month="10"
+            app:min_year="1998"
+            app:min_year_day="13"
+            app:min_year_month="10"
+            app:month_view="com.example.feijibook.widget.my_calendar.MyMonthView"
+            app:month_view_show_mode="mode_fix"
+            app:other_month_lunar_text_color="#C2C2C2"
+            app:other_month_text_color="#C2C2C2"
+            app:selected_theme_color="#00BCD4"
+            app:week_text_color="#B9B7B7"
+            app:week_bar_height="35dp"
+            app:week_start_with="mon"
+            app:week_text_size="14sp"
+            app:week_view="com.example.feijibook.widget.my_calendar.MyWeekView">
+
+        </com.haibin.calendarview.CalendarView>
+
+        <com.example.feijibook.widget.my_recyclerview.MyRecyclerView
+            android:id="@+id/rv_in_arfc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+
+    </com.haibin.calendarview.CalendarLayout>
+    
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_record"
+        android:src="@drawable/add_button_icon"
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="@color/fab_bg"
+        app:borderWidth="0dp"
+        app:fabSize="auto"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="26dp"
+        android:elevation="6dp"
+        android:clickable="true"
+        app:pressedTranslationZ="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true" />
+
+</FrameLayout>

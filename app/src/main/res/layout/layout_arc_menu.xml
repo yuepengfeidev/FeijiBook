@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.feijibook.widget.MyArcMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/arc_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:radius="96dp">
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_arc_cbutton"
+        android:contentDescription="@string/todo"
+        android:elevation="1dp"
+        android:src="@drawable/icon_arc_cbutton"
+        android:translationZ="6dp" />
+
+    <ImageView
+        android:id="@+id/iv_delete_or_save"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:contentDescription="@string/shanchuhuobaocun"
+        android:src="@drawable/icon_arc_delete" />
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:contentDescription="@string/bianji"
+        android:src="@drawable/icon_arc_edit" />
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:contentDescription="@string/shexiang"
+        android:src="@drawable/icon_arc_video" />
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:contentDescription="@string/zhaoxiang"
+        android:src="@drawable/icon_arc_photo" />
+
+
+</com.example.feijibook.widget.MyArcMenu>

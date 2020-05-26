@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toEndOf="@+id/iv_type_icon"
+        app:layout_constraintTop_toBottomOf="@+id/tv_remark" />
+
+    <ImageView
+        android:id="@+id/iv_type_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/category_e_beauty_selected" />
+
+    <TextView
+        android:id="@+id/tv_ymd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="2019年10月3日"
+        app:layout_constraintBottom_toTopOf="@+id/view21"
+        app:layout_constraintStart_toEndOf="@+id/iv_type_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_type_icon" />
+
+    <TextView
+        android:id="@+id/tv_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="星期四"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_ymd"
+        app:layout_constraintStart_toEndOf="@+id/tv_ymd"
+        app:layout_constraintTop_toTopOf="@+id/tv_ymd" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="类型："
+        app:layout_constraintStart_toEndOf="@+id/iv_type_icon"
+        app:layout_constraintTop_toTopOf="@+id/view21" />
+
+    <TextView
+        android:id="@+id/tv_expend_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="支出"
+        android:textColor="@color/text_black_color"
+        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="金额："
+        app:layout_constraintBottom_toBottomOf="@+id/tv_expend_income"
+        app:layout_constraintStart_toEndOf="@+id/tv_expend_income"
+        app:layout_constraintTop_toTopOf="@+id/tv_expend_income" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="11"
+        android:textColor="@color/text_black_color"
+        app:layout_constraintStart_toEndOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="备注："
+        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="餐饮"
+        android:textColor="@color/text_black_color"
+        app:layout_constraintBottom_toBottomOf="@+id/textView31"
+        app:layout_constraintStart_toEndOf="@+id/textView31"
+        app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+    <View
+        android:id="@+id/view21"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:background="@color/line_gray2"
+        app:layout_constraintBottom_toBottomOf="@id/rv_photos"
+        app:layout_constraintEnd_toEndOf="@+id/iv_type_icon"
+        app:layout_constraintStart_toStartOf="@+id/iv_type_icon"
+        app:layout_constraintTop_toBottomOf="@+id/iv_type_icon" />
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="选择"
+        android:textColor="@color/text_blue_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/rv_photos"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/tv_money"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="mint_green_like">#42CFBE</color>
+    <color name="sky_blue_like">#2CC2E0</color>
+    <color name="purple_like">#B888E5</color>
+    <color name="light_pink_like">#F695A8</color>
+    <color name="yellow_like">#F9D461</color>
+    <color name="text_gray">#C2C1C1</color>
+    <color name="day_record_gray">#DD8F8787</color>
+    <color name="line_gray">#F5DFDEDE</color>
+    <color name="line_gray2">#F5C9C7C7</color>
+    <color name="cursor_blue">#03A9F4</color>
+    <color name="color_transparent">#00000000</color>
+
+    <color name="date_picker_bg">#FFFFFF</color>
+    <color name="date_picker_divider">#11112233</color>
+    <color name="date_picker_text_light">#111111</color>
+    <color name="date_picker_text_dark">#B9B9B9</color>
+
+    <color name="main_bg">#F0F0F0</color>
+    <color name="select_title_text">#B0B0B0</color>
+    <color name="current_time_bg">#FFFFFF</color>
+    <color name="current_time_text">#666666</color>
+    <color name="selected_time_text">#57C5E8</color>
+
+    <color name="category_setting_selected_color">#202020</color>
+    <color name="category_setting_unselected_color">#ffffff</color>
+    <color name="background_gray">#979797</color>
+    <color name="background_light_gray">#F7F7F7</color>
+    <color name="background_light_gray2">#DDDDDD</color>
+    <color name="itemPressedGray">#BFB8B8B8</color>
+
+    <color name="text_white">#ffffff</color>
+    <color name="text_light_white">#EBDADADA</color>
+    <color name="remark_view_gray">#2E2727</color>
+
+    <color name="tab_unselected_color">#949494</color>
+    <color name="tab_selected_color">#1A1A1A</color>
+    
+    <color name="line_or_circle_or_chart_text_heavy_gray">#131212</color>
+    <color name="xaxis_line_or_limit_line_light_gray">#B3B0B0</color>
+
+    <color name="shadow_bg_color">#8B000000</color>
+    <color name="system_white">#FAFAFA</color>
+    <color name="system_gray">#F5F2F2</color>
+
+    <color name="text_black_color">#000000</color>
+    <color name="text_light_gray_color">#ADADAD</color>
+    <color name="text_light_gray_color2">#F2DAD9D9</color>
+    <color name="text_blue_color">#008BFD</color>
+    <color name="text_red_color">#E7483B</color>
+    
+    <!--PieChart的颜色-->
+    <color name="pie_chart_purple">#5114F5</color>
+    <color name="pie_chart_blue">#0B8FCF</color>
+    <color name="pie_chart_green">#52AD55</color>
+    <color name="pie_chart_red">#F81E0E</color>
+    <color name="pie_chart_orange">#FF4C14</color>
+    <color name="pie_chart_yellow">#D18109</color>
+    <color name="pie_chart_gray">#DAD9D9</color>
+
+    <color name="bt_sign_in_color">#f53e7e</color>
+    <color name="air_excellent_color">#87EC27</color>
+    <color name="air_good_color">#F7BC11</color>
+    <color name="air_light_color">#FF9800</color>
+    <color name="air_moderate_color">#FF5722</color>
+    <color name="air_severe_color">#6327C7</color>
+    <color name="air_serious_color">#743A25</color>
+
+</resources>

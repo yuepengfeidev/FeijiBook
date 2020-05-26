@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="275dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_bill_setting">
+
+    <EditText
+        android:id="@+id/et_res_pw"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/bg_dialog_bill_setting_edittext"
+        android:hint="输入原密码"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:inputType="textPassword"
+        android:textColor="@color/text_black_color"
+        android:textColorHint="@color/text_light_gray_color"
+        android:textCursorDrawable="@drawable/cursor_shape"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <EditText
+        android:id="@+id/et_new_pw"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/bg_dialog_bill_setting_edittext"
+        android:hint="输入新密码"
+        android:inputType="textPassword"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:textColor="@color/text_black_color"
+        android:textColorHint="@color/text_light_gray_color"
+        android:textCursorDrawable="@drawable/cursor_shape"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_res_pw" />
+
+    <EditText
+        android:id="@+id/et_again_pw"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="17dp"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_dialog_bill_setting_edittext"
+        android:hint="再次输入新密码"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:textColor="@color/text_black_color"
+        android:textColorHint="@color/text_light_gray_color"
+        android:textCursorDrawable="@drawable/cursor_shape"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_new_pw" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="修改密码"
+        android:textColor="@color/text_black_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/selector_cancel_click_bg"
+        android:gravity="center"
+        android:text="@string/quxiao"
+        android:textAllCaps="false"
+        android:textColor="@color/text_blue_color"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view13" />
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/selector_ok_click_bg"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="@string/queding"
+        android:textColor="@color/text_light_gray_color"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view13"
+        app:layout_constraintTop_toTopOf="@+id/view13" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/line_gray2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_again_pw" />
+
+    <View
+        android:id="@+id/view13"
+        android:layout_width="0.5dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/line_gray2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view12" />
+</android.support.constraint.ConstraintLayout>

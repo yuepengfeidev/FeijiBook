@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light_gray"
+    tools:context=".activity.main_act.find_frag.FindFragment">
+
+
+    <TextView
+        android:id="@+id/tv_find_title"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/sky_blue_like"
+        android:gravity="center"
+        android:text="@string/faxian"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.feijibook.widget.MyNestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_find_title"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.feijibook.widget.my_constraintlayout.MyConstraintLayout
+                android:id="@+id/layout_bill"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_constraint_layout"
+                android:clickable="true"
+                android:focusable="true"
+                android:translationZ="6dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/right_arrows_icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/zhangdan"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_bill_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginBottom="19dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="@string/shouru"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_bill_income"
+                    app:layout_constraintStart_toEndOf="@+id/view7" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:text="@string/zhichu"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                    app:layout_constraintStart_toEndOf="@+id/textView10"
+                    app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:text="@string/jieyu"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                    app:layout_constraintStart_toEndOf="@+id/textView11"
+                    app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+                <TextView
+                    android:id="@+id/tv_bill_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="19sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_bill_month"
+                    app:layout_constraintStart_toStartOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/tv_bill_expend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="19sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_bill_month"
+                    app:layout_constraintStart_toStartOf="@+id/textView11" />
+
+                <TextView
+                    android:id="@+id/tv_bill_surplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="19sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_bill_month"
+                    app:layout_constraintStart_toStartOf="@+id/textView12" />
+
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="1.2dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="24dp"
+                    android:background="@color/line_gray2"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_bill_month"
+                    app:layout_constraintStart_toEndOf="@+id/tv_bill_month"
+                    app:layout_constraintTop_toTopOf="@+id/tv_bill_month" />
+
+            </com.example.feijibook.widget.my_constraintlayout.MyConstraintLayout>
+
+            <com.example.feijibook.widget.my_constraintlayout.MyConstraintLayout
+                android:id="@+id/layout_budget"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_constraint_layout"
+                android:clickable="true"
+                android:focusable="true"
+                android:translationZ="6dp">
+
+                <TextView
+                    android:id="@+id/tv_budget_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_set_budget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/bg_edit_budget_blue"
+                    android:paddingStart="8dp"
+                    android:paddingTop="6dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="6dp"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/pc_budget"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_budget_month" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="@string/shengyuyusuan"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView17"
+                    app:layout_constraintStart_toEndOf="@+id/pc_budget"
+                    app:layout_constraintTop_toTopOf="@+id/pc_budget"
+                    app:layout_constraintVertical_bias="0.75" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quanbuyusuan"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pc_budget"
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toTopOf="@+id/pc_budget" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/quanbuzhichu"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/pc_budget"
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <TextView
+                    android:id="@+id/tv_remain_budget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView16"
+                    app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+                <TextView
+                    android:id="@+id/tv_all_budget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView18"
+                    app:layout_constraintStart_toStartOf="@+id/tv_remain_budget"
+                    app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+                <TextView
+                    android:id="@+id/tv_all_expend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView18"
+                    app:layout_constraintStart_toStartOf="@+id/tv_all_budget"
+                    app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+                <View
+                    android:id="@+id/view8"
+                    android:layout_width="195dp"
+                    android:layout_height="0.4dp"
+                    android:background="@color/pie_chart_gray"
+                    app:layout_constraintBottom_toTopOf="@+id/textView17"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_set_budget"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pc_budget"
+                    android:layout_width="120dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_budget_month"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_budget_month" />
+
+            </com.example.feijibook.widget.my_constraintlayout.MyConstraintLayout>
+
+            <com.example.feijibook.widget.my_constraintlayout.MyConstraintLayout
+                android:id="@+id/layout_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_constraint_layout"
+                android:clickable="true"
+                android:focusable="true"
+                android:translationZ="6dp">
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:text="南京天气实况"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_temperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="22℃"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_weather"
+                    app:layout_constraintStart_toStartOf="@+id/tv_weather"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_area" />
+
+                <TextView
+                    android:id="@+id/tv_weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="多云转晴"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_area"
+                    app:layout_constraintHorizontal_bias="0.17"
+                    app:layout_constraintStart_toStartOf="@+id/tv_area"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_temperature" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:text="风向风速："
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_temperature"
+                    app:layout_constraintStart_toEndOf="@+id/tv_temperature"
+                    app:layout_constraintTop_toTopOf="@+id/tv_temperature" />
+
+                <TextView
+                    android:id="@+id/tv_direct_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="东南风 2级"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView46"
+                    app:layout_constraintStart_toEndOf="@+id/textView46"
+                    app:layout_constraintTop_toTopOf="@+id/textView46" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="相对湿度："
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_weather"
+                    app:layout_constraintStart_toStartOf="@+id/textView46"
+                    app:layout_constraintTop_toTopOf="@+id/tv_weather" />
+
+                <TextView
+                    android:id="@+id/tv_humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="68%"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView48"
+                    app:layout_constraintStart_toEndOf="@+id/textView48"
+                    app:layout_constraintTop_toTopOf="@+id/textView48" />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:text="空气质量："
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView46"
+                    app:layout_constraintStart_toEndOf="@+id/tv_direct_power"
+                    app:layout_constraintTop_toTopOf="@+id/textView46" />
+
+                <TextView
+                    android:id="@+id/tv_air"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_light_color"
+                    android:paddingStart="2dp"
+                    android:paddingTop="1dp"
+                    android:paddingEnd="2dp"
+                    android:paddingBottom="1dp"
+                    android:text="118 轻度污染"
+                    android:textColor="@color/text_white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_humidity"
+                    app:layout_constraintStart_toStartOf="@+id/textView50"
+                    app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1998年10月13日"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_area"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.19"
+                    app:layout_constraintStart_toEndOf="@+id/tv_area"
+                    app:layout_constraintTop_toTopOf="@+id/tv_area" />
+
+            </com.example.feijibook.widget.my_constraintlayout.MyConstraintLayout>
+
+        </LinearLayout>
+    </com.example.feijibook.widget.MyNestedScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_type_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/category_e_beauty_selected" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="102dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iv_type_icon"
+        app:layout_constraintTop_toTopOf="@+id/view21">
+
+        <com.example.feijibook.widget.MyVideoView
+            android:id="@+id/video_view"
+            android:layout_width="102dp"
+            android:layout_height="178dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_ymd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="2019年10月3日"
+        app:layout_constraintBottom_toTopOf="@+id/view21"
+        app:layout_constraintStart_toEndOf="@+id/iv_type_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_type_icon" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="备注："
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout1"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout1"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout1" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="类型："
+        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout1" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="金额："
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout1"
+        app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/tv_income_expend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="支出"
+        android:textColor="@color/text_black_color"
+        app:layout_constraintBottom_toBottomOf="@+id/textView26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="餐饮"
+        android:textColor="@color/text_black_color"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11"
+        android:textColor="@color/text_black_color"
+        app:layout_constraintBottom_toBottomOf="@+id/textView27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/tv_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="星期四"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_ymd"
+        app:layout_constraintStart_toEndOf="@+id/tv_ymd"
+        app:layout_constraintTop_toTopOf="@+id/tv_ymd" />
+
+    <View
+        android:id="@+id/view21"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:background="@color/line_gray2"
+        app:layout_constraintBottom_toBottomOf="@id/linearLayout1"
+        app:layout_constraintEnd_toEndOf="@+id/iv_type_icon"
+        app:layout_constraintStart_toStartOf="@+id/iv_type_icon"
+        app:layout_constraintTop_toBottomOf="@+id/iv_type_icon" />
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:textColor="@color/text_blue_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_money"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.84000003" />
+</android.support.constraint.ConstraintLayout>

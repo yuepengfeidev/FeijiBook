@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/arfa_main_context"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_blue_like"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/tv_cancel_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="5dp"
+        android:text="@string/quxiao"
+        android:textColor="@drawable/text_view_click_bg"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_expane_income"
+        android:layout_width="151dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        app:tabBackground="@android:color/transparent"
+        app:tabIndicatorColor="#000000"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_detail_type_choose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tl_expane_income" />
+
+</RelativeLayout>

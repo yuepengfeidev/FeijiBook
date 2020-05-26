@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EDED"
+    android:columnCount="4"
+    android:rowCount="4">
+
+    <TextView
+        android:id="@+id/tv_nb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:background="@drawable/riple_shape"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tv_nb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:background="@drawable/riple_shape2"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/tv_nb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:background="@drawable/riple_shape3"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:id="@+id/layout_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:background="@drawable/riple_shape4"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/iv_date"
+            android:layout_width="25dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:scaleType="fitEnd"
+            android:src="@drawable/vip_invite_cal" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/tv_date_jintian"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_nb4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:background="@drawable/riple_shape2"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/tv_nb5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:background="@drawable/riple_shape"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/tv_nb6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:background="@drawable/riple_shape4"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="6"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/tv_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:background="@drawable/riple_shape5"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/tv_nb7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:background="@drawable/riple_shape3"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="7"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/tv_nb8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:background="@drawable/riple_shape4"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="8"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/tv_nb9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:background="@drawable/riple_shape"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="9"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:background="@drawable/riple_shape2"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/tv_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:background="@drawable/riple_shape"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="."
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/tv_nb0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:background="@drawable/riple_shape5"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:focusable="true" />
+
+    <LinearLayout
+        android:id="@+id/layout_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:background="@drawable/riple_shape2"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/skc_tally_keyboard_del" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_equal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:background="@color/sky_blue_like"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:focusable="true" />
+
+</GridLayout>
+

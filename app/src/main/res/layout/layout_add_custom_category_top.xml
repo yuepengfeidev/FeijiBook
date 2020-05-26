@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sky_blue_like">
+
+    <ImageView
+        android:id="@+id/iv_add_expend_category_back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/back_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_add_custom_category_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_add_custom_category_title" />
+
+    <TextView
+        android:id="@+id/tv_add_expend_category_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@id/iv_back"
+        android:text="@string/tv_add_expend_category_back_back"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_add_expend_category_back"
+        app:layout_constraintStart_toStartOf="@+id/iv_add_expend_category_back"
+        app:layout_constraintTop_toTopOf="@+id/iv_add_expend_category_back" />
+
+    <TextView
+        android:id="@+id/tv_add_custom_category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/date_picker_text_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_finish_custom_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/tv_finish_custom_category_finish"
+        android:textColor="@color/date_picker_text_light"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_add_expend_category_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_add_expend_category_back" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_custom_category_title">
+
+        <CheckBox
+            android:id="@+id/ck_choose_type"
+            android:button="@drawable/cc_entertainmente_game_selector"
+            android:checked="true"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_custom_type_name"
+            android:hint="@string/et_custom_type_name_hint"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:maxLength="4"
+            android:textCursorDrawable="@drawable/cursor_shape"
+            android:cursorVisible="false"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:id="@+id/iv_del_custom_type_name"
+            android:visibility="gone"
+            android:src="@drawable/search_del_icon_normal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="0.8dp"
+        android:background="@color/line_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</android.support.constraint.ConstraintLayout>

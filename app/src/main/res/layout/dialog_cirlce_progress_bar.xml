@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="@drawable/bg_dialog">
+
+    <com.example.feijibook.widget.my_progress_bar.MyCircleProgressBar
+        android:id="@+id/myCircleProgressBar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:gravity="center" />
+</RelativeLayout>

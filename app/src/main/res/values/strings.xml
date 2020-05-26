@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">非记不可</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="cancel">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="confirm">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+    <string name="title_activity_category_setting">CategorySettingActivity</string>
+    <string name="et_custom_type_name_hint">请输入类别名称（不超过四个汉字）</string>
+    <string name="tv_finish_custom_category_finish">完成</string>
+    <string name="tv_add_expend_category_back_back">返回</string>
+    <string name="tv_week_chart_frag_string">周</string>
+    <string name="tv_month_chart_frag_string">月</string>
+    <string name="tv_year_chart_frag_string">年</string>
+    <string name="iv_pie_chart_description">piechart</string>
+    <string name="tv_locate_to_today_jintian">今天</string>
+    <string name="tv_back_to_detail_frag_fanhui">返回</string>
+    <string name="todo">TODO</string>
+    <string name="tv_date_jintian">今天</string>
+    <string name="zhichu">支出</string>
+    <string name="shouru">收入</string>
+    <string name="tv_item_remark_no_money_meiyoufeiyong">没有费用</string>
+    <string name="tv_remark_title_suidasnabijaoyi">最大3笔交易</string>
+    <string name="tv_back_fanhui">返回</string>
+    <string name="faxian">发现</string>
+    <string name="tag_key_translation_z">translation_z</string>
+    <string name="zhangdan">账单</string>
+    <string name="jieyu">结余</string>
+    <string name="shengyuyusuan">剩余预算：</string>
+    <string name="quanbuyusuan">全部预算：</string>
+    <string name="quanbuzhichu">全部支出：</string>
+    <string name="yuefeng">月份</string>
+    <string name="qingshurujinge">请输入预算金额</string>
+    <string name="qingshurunicheng">请输入2-12位昵称</string>
+    <string name="queding">确定</string>
+    <string name="quxiao">取消</string>
+    <string name="meiyuezongyusuan">每月总预算</string>
+    <string name="leixing">类型</string>
+    <string name="jine">金额</string>
+    <string name="riqi">日期</string>
+    <string name="beizhu">备注</string>
+    <string name="zhaopian">照片</string>
+    <string name="shiping">视频</string>
+    <string name="zanwushuju">暂无数据</string>
+    <string name="bianji">编辑</string>
+    <string name="shexiang">摄像</string>
+    <string name="zhaoxiang">照相</string>
+    <string name="shanchuhuobaocun">删除或保存</string>
+    <string name="jiludezhaopian">记录的照片</string>
+    <string name="shanchuzhaop">删除照片</string>
+    <string name="gangpaidezhaopian">刚拍的照片</string>
+    <string name="jizhangzongtianshu">记账总天数</string>
+    <string name="jizhangzongbishu">记账总笔数</string>
+    <string name="zhaopian2">照 片</string>
+    <string name="shiping2">视 频</string>
+    <string name="gerenxingxi">个人信息</string>
+    <string name="bianjizongyusuan">编辑总预算</string>
+    <string name="qingchuzongyusuan">清除总预算</string>
+    <string name="nan">男</string>
+    <string name="nv">女</string>
+    <string name="paizhao">拍照</string>
+    <string name="congxiangcexuanze">从相册选择</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_add_addible_to_optional"
+        android:src="@drawable/ic_add_circle_black_24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_addible_type"
+        android:layout_toEndOf="@id/iv_add_addible_to_optional"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/category_e_dress"
+        android:layout_centerVertical="true"
+        android:layout_width="32dp"
+        android:layout_height="32dp" />
+
+    <TextView
+        android:id="@+id/tv_addible_type_name"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@id/iv_addible_type"
+        android:text="餐饮"
+        android:layout_centerVertical="true"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <View
+        android:background="@color/line_gray"
+        android:layout_marginStart="17dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/iv_add_addible_to_optional"
+        android:layout_height="0.5dp"/>
+
+</RelativeLayout>

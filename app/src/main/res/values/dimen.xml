@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="float_height">35dp</dimen>
+    <dimen name="text_position">12dp</dimen>
+
+    <dimen name="picker_view_height">160dp</dimen>
+    <dimen name="date_unit_text_size">18sp</dimen>
+
+    <dimen name="tab_layout_text_size_selected">17sp</dimen>
+    <dimen name="tab_layout_text_size_unselected">13sp</dimen>
+
+</resources>

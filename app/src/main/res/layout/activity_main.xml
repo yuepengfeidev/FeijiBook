@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.main_act.MainActivity">
+
+
+    <com.example.feijibook.widget.MyViewPager
+        android:id="@+id/view_pager_main"
+        android:layout_marginBottom="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.example.feijibook.widget.MyViewPager>
+
+    <com.example.feijibook.widget.MyBottomBar
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="75dp"/>
+
+    <View
+        android:id="@+id/view_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/shadow_bg_color"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+         />
+
+</RelativeLayout>

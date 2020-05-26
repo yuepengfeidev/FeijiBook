@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.search_record_act.SearchRecordFragment">
+
+    <include
+        android:id="@+id/layout_search_record_top"
+        layout="@layout/layout_search_record_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.feijibook.widget.my_recyclerview.MyRecyclerView
+        android:id="@+id/rv_search_record_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_search_record_top" />
+</RelativeLayout>
