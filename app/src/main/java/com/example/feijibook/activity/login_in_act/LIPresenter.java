@@ -11,6 +11,7 @@ import com.example.feijibook.app.MyApplication;
 import com.example.feijibook.http.BaseObserver;
 import com.example.feijibook.http.ExceptionHandle;
 
+
 /**
  * LIPresenter
  *
@@ -82,6 +83,7 @@ public class LIPresenter implements LIContract.Presenter {
                         Handler handler = new Handler();
                         handler.postDelayed(() -> {
                             Intent intent = new Intent(mActivity, MainActivity.class);
+                            intent.putExtra("introduce",true);
                             setStartActivity(intent);
                             setFinishAct();
                         }, 500);

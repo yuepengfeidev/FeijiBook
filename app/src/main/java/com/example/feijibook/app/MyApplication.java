@@ -23,7 +23,7 @@ public class MyApplication extends Application {
     public static String BASE_PATH;
     public static String VIDEO_PATH;
     public static String PHOTO_PATH;
-    public final static String HTTP_URL = "http://172.29.152.86:8081/FeiJiBookServer_war_exploded/user/";
+    public final static String HTTP_URL = "http://192.168.137.1:8081/FeiJiBookServer_war_exploded/user/";
     /**
      * 聚合天气接口的Key
      */

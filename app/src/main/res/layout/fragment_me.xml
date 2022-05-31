@@ -166,6 +166,32 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/view30" />
 
+                <TextView
+                    android:id="@+id/tv_introduce"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/bg_item_pressed2"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingStart="24dp"
+                    android:text="当月最佳消费推荐"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_change_password" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/icon_right"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_introduce"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_introduce"
+                    app:layout_constraintTop_toBottomOf="@+id/view31" />
+
                 <View
                     android:id="@+id/view28"
                     android:layout_width="0dp"

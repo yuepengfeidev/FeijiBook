@@ -61,7 +61,7 @@ public class HttpModule {
     }
 
     /**
-     * 用于解析返回GSON
+     * 用于解析返回json为对象
      */
     @Named("Gson")
     @Provides

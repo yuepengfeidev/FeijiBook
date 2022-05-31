@@ -1,5 +1,6 @@
 package com.example.feijibook.activity.login_in_act;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ public class LoginInActivity extends AppCompatActivity {
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
 
+
         if (Build.VERSION.SDK_INT >= 21) {
             View decorView = getWindow().getDecorView();
             decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
@@ -29,6 +31,8 @@ public class LoginInActivity extends AppCompatActivity {
         presenter.start();
         ActivityUtil.addFragmentToActivity(getSupportFragmentManager(),fragment,
                 R.id.fl_login_in_act);
+
+
 
     }
 }

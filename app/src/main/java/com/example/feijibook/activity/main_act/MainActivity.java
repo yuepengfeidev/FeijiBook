@@ -1,5 +1,6 @@
 package com.example.feijibook.activity.main_act;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -28,6 +29,7 @@ import com.example.feijibook.entity.record_type_bean.CategoryType;
 import com.example.feijibook.util.SoundShakeUtil;
 import com.example.feijibook.widget.MyBottomBar;
 import com.example.feijibook.widget.MyViewPager;
+import com.example.feijibook.widget.my_dialog.DataModelDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -77,6 +79,10 @@ public class MainActivity extends BaseActivity implements MainContract.View, UIP
         // 没有权限则获取权限
         if (!hasPermissions(permissions)) {
             requestNecessaryPermissions(this, permissions);
+        }
+        if (getIntent().getBooleanExtra("introduce",false)){
+            DataModelDialog dialog = new DataModelDialog(this);
+            dialog.show();
         }
         initPresenter();
         Log.d("yue", "onCreate: mainactivity");

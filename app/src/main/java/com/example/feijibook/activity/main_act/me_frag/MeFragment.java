@@ -30,6 +30,7 @@ import com.example.feijibook.util.SoundShakeUtil;
 import com.example.feijibook.widget.MyToast;
 import com.example.feijibook.widget.my_constraintlayout.MyTextView;
 import com.example.feijibook.widget.my_dialog.ChangePwDialog;
+import com.example.feijibook.widget.my_dialog.DataModelDialog;
 import com.example.feijibook.widget.my_dialog.SettingChooseDialog;
 import com.example.feijibook.widget.my_dialog.SettingDialog;
 
@@ -51,6 +52,8 @@ public class MeFragment extends Fragment implements MeContract.View, MainActivit
     TextView tvDayCount;
     @BindView(R.id.tv_record_count)
     TextView tvRecordCount;
+    @BindView(R.id.tv_introduce)
+    TextView tvIntroduce;
     @BindView(R.id.tv_nick_name)
     TextView tvNickName;
     @BindView(R.id.tv_photo_album)
@@ -122,6 +125,7 @@ public class MeFragment extends Fragment implements MeContract.View, MainActivit
         startActivity(intent);
     }
 
+    DataModelDialog mDialog;
     @Override
     public void showChangePwDialog() {
         if (mPwDialog == null) {
@@ -131,6 +135,7 @@ public class MeFragment extends Fragment implements MeContract.View, MainActivit
         } else {
             mPwDialog.show();
         }
+
     }
 
     @Override
@@ -225,7 +230,7 @@ public class MeFragment extends Fragment implements MeContract.View, MainActivit
         unbinder.unbind();
     }
 
-    @OnClick({R.id.iv_portrait, R.id.tv_photo_album, R.id.tv_video_album, R.id.tv_change_password})
+    @OnClick({R.id.iv_portrait, R.id.tv_photo_album, R.id.tv_video_album, R.id.tv_change_password,R.id.tv_introduce})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.iv_portrait:
@@ -251,6 +256,14 @@ public class MeFragment extends Fragment implements MeContract.View, MainActivit
             case R.id.tv_change_password:
                 SoundShakeUtil.playSound(SoundShakeUtil.SELECT_SWOOSH1_SOUND);
                 mPresenter.setShowChangePwDialog();
+                break;
+            case R.id.tv_introduce:
+                if (mDialog == null){
+                    mDialog = new DataModelDialog(mActivity);
+                    mDialog.show();
+                }else {
+                    mDialog.show();
+                }
                 break;
             default:
         }

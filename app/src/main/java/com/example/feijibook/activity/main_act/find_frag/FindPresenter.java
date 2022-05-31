@@ -214,7 +214,7 @@ public class FindPresenter implements FindContract.Presenter {
             weatherCity = "南京";
             SharedPreferencesUtils.saveStrToSp(SharedPreferencesUtils.WEATHER_CITY, weatherCity);
         }
-        if (updateTime == null || "".equals(updateTime) || DateFormatUtils.isIntervalSixHours(updateTime)) {
+        if (mModel.getWeather()== null || updateTime == null || "".equals(updateTime) || DateFormatUtils.isIntervalSixHours(updateTime)) {
             // 如果选择了新城市 或 没有更新时间 或 距离上次更新已过了6小时，则获取天气数据
             mModel.requestWeather(weatherCity).subscribe(
                     new BaseObserver<ResponseBody>() {

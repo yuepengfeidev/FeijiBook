@@ -297,6 +297,7 @@ public class UIPresenter implements UIContract.Presenter {
        sOnDestroyActListener.onDestroyAct();
         // 销毁当前活动
         setFinishAct();
+
     }
 
     public static OnDestroyActListener sOnDestroyActListener;

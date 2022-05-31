@@ -13,6 +13,7 @@ import com.example.feijibook.activity.record_detail_act.RDModel;
 import com.example.feijibook.activity.sign_up_act.SUModel;
 import com.example.feijibook.activity.user_info_act.UIModel;
 import com.example.feijibook.activity.weather_act.WeatherModel;
+import com.example.feijibook.widget.my_dialog.DataModelDialog;
 
 import javax.inject.Singleton;
 
@@ -56,4 +57,6 @@ public interface HttpComponent {
     void injectCameraModel(CameraModel model);
 
     void injectARFCModel(ARFCModel model);
+
+    void injectDialog(DataModelDialog dialog);
 }

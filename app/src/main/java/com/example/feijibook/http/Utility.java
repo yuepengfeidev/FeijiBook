@@ -13,7 +13,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Utility
@@ -104,4 +107,27 @@ public class Utility {
         }
         return null;
     }
+
+    public static Map<String,Object> handleIntroduceResponse(String response){
+        Map<String,Object> map = new HashMap<>();
+        String[] typeArray = new String[5];
+        int[] moneyArray = new int[5];
+        if (!TextUtils.isEmpty(response)) {
+            try {
+                JSONObject json = new JSONObject(response);
+                JSONArray type = (JSONArray) json.get("type");
+                JSONArray money = (JSONArray) json.get("money");
+                for (int i = 0; i < type.length(); i++){
+                    typeArray[i] = type.getString(i);
+                    moneyArray[i] = money.getInt(i);
+                }
+                map.put("type", typeArray);
+                map.put("money",moneyArray);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+        return map;
+    }
+
 }

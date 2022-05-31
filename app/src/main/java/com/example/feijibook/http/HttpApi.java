@@ -192,5 +192,10 @@ public interface HttpApi {
     @GET("query")
     Observable<ResponseBody> getWeather(@Query("city") String city, @Query("key") String key);
 
+    /**
+    * 获取数据模型的消费推荐
+    */
+    @GET("getExpendIntroduce")
+    Observable<String> getExpendIntroduce();
 
 }
